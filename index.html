@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./weatherData.js"></script>
+  <script src="./script.js"></script>
+
+
+</head>
+<body class="page">
+    
+    <img src="./image/background.jpg" alt="background" class="page__background"/>
+
+  <main class="page__content">
+    <header class="header">
+      <a href="#"><img src="./image/logo.svg" alt="logo" class="header-logo"/></a>
+      <div class="header__search">
+        <input type="text" class="header__input" placeholder="Поиск по городу">
+        <button class="header__button" aria-label="Найти"><img src="./image/search.svg" alt="поиск"></button>
+      </div>
+    </header>
+
+    <section class="weather">
+      <div class="weather__current">
+        <h2 class="weather__city">Москва</h2>
+        <p class="weather__date">Суббота, 06 января</p>
+        <p class="weather__time">11:29</p>
+        <p class="weather__temperature">-7°</p>
+        <p class="weather__condition"><img src="./image/weather.svg" alt="облачно">Облачно</p>
+        <p class="weather__feels">Ощущается как -11°</p>
+      </div>
+
+      <div class="weather__cards">
+        <div class="weather__card">
+          <div class="card__content">
+            <h2 class="card__title">Влажность</h2>
+            <img src="./image/humidity.svg" alt="влажность" class="card__icon">
+            <p class="card__value">75 %</p>
+            <img src="./image/75%.svg" alt="полоса">
+            <div class="card__desc">
+              <p class="left">0%</p>
+              <p class="right">100%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather__card">
+            <div class="card__content">
+            <h2 class="card__title">Давление</h2>
+            <img src="./image/barometr.svg" alt="давление" class="card__icon">
+            <p class="card__value">761</p>
+            <img src="./image/high 771.svg" alt="полоса">
+            <p class="card__desc-2">Повышенное</p>
+          </div>
+        </div>
+
+        <div class="weather__card">
+            <div class="card__content">
+            <h2 class="card__title">Видимость</h2>
+            <img src="./image/visibility.svg" alt="видимость" class="card__icon">
+            <p class="card__value">28 км</p>
+            <img src="./image/25%.svg" alt="полоса">
+            <p class="card__desc-2">Нормальная</p>
+          </div>
+        </div>
+
+        <div class="weather__card">
+            <div class="card__content">
+            <h2 class="card__title">Рассвет</h2>
+            <img src="./image/sunrise.svg" alt="рассвет" class="card__icon">
+            <p class="card__value">8:42</p>
+            <p class="card__desc-2">Прошло: 02:47</p>
+          </div>
+        </div>
+
+        <div class="weather__card">
+            <div class="card__content">
+            <h2 class="card__title">Закат</h2>
+            <img src="./image/sunset.svg" alt="закат" class="card__icon">
+            <p class="card__value">16:37</p>
+            <p class="card__desc-2">Осталось: 05:08</p>
+          </div>
+        </div>
+
+       <div class="weather__card">
+            <div class="card__content">
+            <h2 class="card__title">Сила ветра</h2>
+            <img src="./image/direction.svg" alt="сила ветра" class="card__icon">
+            <p class="card__value">2 м/с</p>
+            <p class="card__desc-2">Северо-западный</p>
+          </div>
+        </div>
+
+
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+:root {
+  --white: rgba(255,255,255,0.95);
+  --glass-bg: rgba(255,255,255,0.07);
+  --glass-border: rgba(255,255,255,0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+html, body {
+  font-variant-numeric: lining-nums proportional-nums;
+  min-width: 1280px;
+}
+
+.page__background {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.page {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 32px auto;
+  background: var(--glass-bg);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+  padding: 32px;
+  width: 1120px; 
+}
+
+.header {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: #F5F4F466;
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 506px;
+}
+
+.header__input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #707070;
+  font-size: 20px;
+  width: 506px;
+}
+
+.header__button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #707070;
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+.weather {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 506px;
+  gap: 32px;
+  margin-bottom: 276px;
+  margin-top: 32px;
+}
+
+.weather__current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #F5F4F4;
+  gap: 8px;
+  padding-top: 5px;
+  padding-left: 5px;
+  
+}
+
+.weather__city {
+  font-size: 24px;
+  font-weight: 700;
+ 
+}
+
+.weather__date, .weather__time, 
+.weather__condition, .weather__feels {
+  font-size: 20px;
+  font-weight: 400;
+} 
+
+.weather__temperature {
+  display: flex;
+  justify-content: center;
+  font-size: 112px;
+  font-weight: 700;
+  padding-top: 100px ;
+  padding-bottom: 130px;
+  height: 112px;
+  width: 518px;
+}
+
+.weather__condition img{
+    padding-right: 10px;
+} 
+
+.weather__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-content: start;
+  width: 506px;
+  height: 408px;
+}
+
+.weather__card {
+  height: 196px;
+  width: 158px;
+  background: #F5F4F466;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__content {
+  height: 160px;
+  width: 143px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  color: #202020;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.card__value {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.card__desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__desc p, .card__desc-2{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.left{
+  padding-right: 80px;
+}
+
+
